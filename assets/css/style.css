@@ -148,12 +148,13 @@ main .container {
 /* cam */
 .cam {
     position: relative;
-    background-image: url(https://picsum.photos/300/200);
+    background-image: url(https://picsum.photos/200/300?random=35);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 145px;
 }
+
 
 .name {
     position: absolute;
