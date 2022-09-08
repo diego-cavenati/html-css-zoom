@@ -66,7 +66,8 @@ body{
 }
 
 .col-2_14 {
-    width: calc((100% / 14) * 2);
+    width: calc((100% / 14) * 2 - 1rem);
+    padding: 0.2rem 0.1rem;
 }
 
 .col-3 {
@@ -147,7 +148,6 @@ main .container {
 /* cam */
 .cam {
     position: relative;
-    margin-bottom: 0.4rem;
     background-image: url(https://picsum.photos/300/200);
     background-position: center;
     background-repeat: no-repeat;
@@ -167,11 +167,6 @@ img {
     height: 145px;
 }
 
-
-
-
-
-
 /* footer */
 footer {
     height: 10vh;
@@ -183,10 +178,13 @@ footer {
 
 .action {
     flex-grow: 1;
+    display: flex;
 }
 
 .room {
     flex-grow: 2;
+    display: flex;
+    justify-content: center;
 }
 
 .end {
@@ -198,8 +196,19 @@ footer {
     color: var(--primary);
 }
 
+footer i {
+    font-size: 2rem;
+    padding: 0.3rem;
+}
 
+.action div, .room div {
+    padding: 1rem;
+    text-align: center;
+}
 
+#display_block {
+    display: block;
+}
 
 .end span {
     background-color: var(--elements);
