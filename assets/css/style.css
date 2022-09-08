@@ -62,6 +62,10 @@ body{
 }
 
 .col-2 {
+    width: calc((100% / 12) * 2);
+}
+
+.col-2_14 {
     width: calc((100% / 14) * 2);
 }
 
@@ -172,4 +176,33 @@ img {
 footer {
     height: 10vh;
     background-color: var(--light-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.action {
+    flex-grow: 1;
+}
+
+.room {
+    flex-grow: 2;
+}
+
+.end {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.share i {
+    color: var(--primary);
+}
+
+
+
+
+.end span {
+    background-color: var(--elements);
+    padding: 4vh;
+    color: red;
 }
